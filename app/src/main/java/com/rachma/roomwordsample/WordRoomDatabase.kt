@@ -31,7 +31,8 @@ import kotlinx.coroutines.launch
  * This is the backend. The database. This used to be done by the OpenHelper.
  * The fact that this has very few comments emphasizes its coolness.
  */
-// untuk mendeklarasikan entity yang termasuk dalam database dan menetapkan nomor versi
+// Untuk mendeklarasikan entity yang termasuk dalam database dan menetapkan nomor versi
+// Untuk membuat class yang bernama WordRoomDatabase
 @Database(entities = [Word::class], version = 1)
 abstract class WordRoomDatabase : RoomDatabase() {
 
@@ -45,8 +46,8 @@ abstract class WordRoomDatabase : RoomDatabase() {
             context: Context,
             scope: CoroutineScope
         ): WordRoomDatabase {
-            // jika INSTANCE bukan null, kembalikan,
-            // jika ya, buat databasenya
+            // Jika INSTANCE bukan null, kembalikan,
+            // Jika ya, buat databasenya
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,

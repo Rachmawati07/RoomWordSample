@@ -14,6 +14,7 @@ import androidx.room.PrimaryKey
  * See the documentation for the full rich set of annotations.
  * https://developer.android.com/topic/libraries/architecture/room.html
  */
-
+// Membuat class baru yang bernama word
+// Class ini akan menjelaskan Entity yang mewakili tabel SQLite
 @Entity(tableName = "word_table")
 data class Word(@PrimaryKey @ColumnInfo(name = "word") val word: String)

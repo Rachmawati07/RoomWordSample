@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
-
+// Membuat kelas yang bernama WordListAdapter
+// Class WordViewHolder, memungkinkan untuk mengikat teks ke TextView
+// WordListAdapter akan membuat WordViewHolder di onCreateViewHolder dan mengikatnya di onBindViewHolder
 class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(WORDS_COMPARATOR) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordViewHolder {
@@ -35,7 +37,7 @@ class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(WORDS_
             }
         }
     }
-
+    // WordsComparator menentukan cara komputasi jika dua kata sama atau jika kontennya sama
     companion object {
         private val WORDS_COMPARATOR = object : DiffUtil.ItemCallback<Word>() {
             override fun areItemsTheSame(oldItem: Word, newItem: Word): Boolean {

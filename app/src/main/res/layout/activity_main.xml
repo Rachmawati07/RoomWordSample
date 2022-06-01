@@ -26,6 +26,10 @@ So, we are leaving the template code in. -->
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Ini adalah bagian untuk menampilkan kata-kata agar bisa digulir
+         - Mempunyai id berupa recyclerview
+         - Untuk menyecrooll layar secara vertikal
+    -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="0dp"
@@ -37,6 +41,10 @@ So, we are leaving the template code in. -->
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Ini adalah bagian untuk menampilkan icon add
+         - Mempunyai id berupa fab
+         - Dan berasal dari drawable
+    -->
      <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         app:layout_constraintBottom_toBottomOf="parent"

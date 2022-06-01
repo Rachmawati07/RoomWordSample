@@ -28,6 +28,10 @@ limitations under the License. -->
     tools:context="com.rachma.roomwordsample.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <!-- Ini adalah bagian untuk menampilkan kata-kata agar bisa digulir
+         - Mempunyai id berupa recyclerview
+         - Untuk menyecrooll layar secara vertikal
+    -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"

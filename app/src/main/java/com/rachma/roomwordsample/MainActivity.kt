@@ -36,11 +36,10 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        // Add an observer on the LiveData returned by getAlphabetizedWords.
-        // The onChanged() method fires when the observed data changes and the activity is
-        // in the foreground.
+        // Menambahkan pengamat di LiveData yang dikembalikan oleh getAlphabetizedWords.
+        // Metode onChanged() diaktifkan ketika data yang diamati berubah dan aktivitasnya di latar depan.
         wordViewModel.allWords.observe(owner = this) { words ->
-            // Update the cached copy of the words in the adapter.
+            // Perbarui salinan kata-kata yang di-cache di adaptor.
             words.let { adapter.submitList(it) }
         }
     }

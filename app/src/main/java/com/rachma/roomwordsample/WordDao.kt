@@ -15,9 +15,11 @@ import kotlinx.coroutines.flow.Flow
  * https://developer.android.com/topic/libraries/architecture/room.html#type-converters
  */
 
-// Mengurutkan semua kata menurut abjad
-// Menyisipkan kata
-// Menghapus semua kata
+// Untuk mengurutkan semua kata menurut abjad
+// Untuk menyisipkan kata
+// Untuk menghapus semua kata
+// Anotasi @Dao mengidentifikasikannya sebagai class DAO untuk Room
+// Anotasi @Insert adalah anotasi metode DAO khusus untuk menambahkan data
 @Dao
 interface WordDao {
 

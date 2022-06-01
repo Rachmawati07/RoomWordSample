@@ -19,6 +19,12 @@ limitations under the License. -->
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek RoomWordSample
+         - Mempunyai id berupa edit_word
+         - Menggunakan input teks berupa textAutoComplete
+         - Menggunakan font berupa sans-serif-light
+         - Mempunyai ukuran teks sebesar 18sp
+    -->
     <EditText
         android:id="@+id/edit_word"
         android:layout_width="match_parent"
@@ -30,6 +36,11 @@ limitations under the License. -->
         android:layout_margin="@dimen/big_padding"
         android:textSize="18sp" />
 
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek RoomWordSample
+         - Mempunyai id berupa button_save
+         - Tombol ini bertuliskan Save
+         - Mempunyai ukuran teks sebesar 16sp
+    -->
     <Button
         android:id="@+id/button_save"
         android:layout_width="match_parent"

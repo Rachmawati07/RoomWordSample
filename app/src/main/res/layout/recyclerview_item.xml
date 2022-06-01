@@ -18,6 +18,10 @@ limitations under the License. -->
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <!-- Bagian ini digunakan untuk membuat tata letak untuk item
+       - Mempunyai id berupa textView
+       - Mempunyai warna background untuk item berupa kuning
+    -->
     <TextView
         android:id="@+id/textView"
         style="@style/word_title"

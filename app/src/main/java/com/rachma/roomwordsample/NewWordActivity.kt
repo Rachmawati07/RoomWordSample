@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 /**
  * Activity for entering a word.
  */
-
+// Membuat kelas NewWordActivity
 class NewWordActivity : AppCompatActivity() {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +34,6 @@ class NewWordActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val EXTRA_REPLY = "com.example.android.wordlistsql.REPLY"
+        const val EXTRA_REPLY = "com.rachma.wordlistsql.REPLY"
     }
 }
